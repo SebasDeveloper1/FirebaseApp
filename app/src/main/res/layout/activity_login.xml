@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".LoginActivity">
+
+    <!--TextView: Label Login-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:text="Login"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/textsize_register"
+        />
+
+    <!--EditText: Inout Email-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailTLI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+
+        <EditText
+            android:id="@+id/emailEt"
+            android:inputType="textEmailAddress"
+            android:hint="email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--EditText: Input password -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordTLI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/emailTLI"
+        app:passwordToggleEnabled="true"
+        >
+
+        <EditText
+            android:id="@+id/passwordEt"
+            android:inputType="textPassword"
+            android:hint="password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Butoon: register user-->
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:text="Login"
+        android:layout_below="@id/passwordTLI"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/RaisedButtonDark"
+
+        />
+
+    <!-- Textciew show dialog to recover password-->
+    <TextView
+        android:id="@+id/recoverpasswordTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:text="Forgot Password? Recover"
+        android:layout_below="@+id/loginBtn"
+        android:textColor="@color/TextColorBlack"/>
+
+    <!--GoogleSignInBtn: sign in with google account -->
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/googleLoginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/recoverpasswordTv"
+        >
+    </com.google.android.gms.common.SignInButton>
+
+    <!--TextView: click go to RegisterActivity -->
+    <TextView
+        android:id="@+id/nothave_accountTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Not have account? Register"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/TextColorBlack"
+        android:layout_marginBottom="20dp"/>
+
+
+</RelativeLayout>

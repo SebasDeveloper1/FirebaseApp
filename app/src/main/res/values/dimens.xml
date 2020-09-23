@@ -1,0 +1,7 @@
+<resources>
+
+    <dimen name="edittext_textsize_login">22sp</dimen>
+    <dimen name="textsize_register">25sp</dimen>
+    <dimen name="textsize_textviewprofile">30sp</dimen>
+
+</resources>

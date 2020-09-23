@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "881645296866",
+    "firebase_url": "https://fir-app-e8ec5.firebaseio.com",
+    "project_id": "fir-app-e8ec5",
+    "storage_bucket": "fir-app-e8ec5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:881645296866:android:048fa3d69ac2164c6052bb",
+        "android_client_info": {
+          "package_name": "com.canibal.firebaseapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "881645296866-a7mim2gj2q5k9ouifnsvr7jpf2tt3iog.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4Q_PLb6Ui9YQAlNX50KrvaczEtDXlUHU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "881645296866-a7mim2gj2q5k9ouifnsvr7jpf2tt3iog.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
